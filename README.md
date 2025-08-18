@@ -1,4 +1,4 @@
-Тг Бот на С#
+### Тг Бот на С#
 ### Суть проекта:
 В игре Warframe есть множество действий с переодичностью в час, день, неделю.
 Но заходить в игру для проверки есть ли какой-нибудь Каскад Бездны Омниа Сп, никому не хочется, суть бота в том,
@@ -45,12 +45,12 @@ warframetbot
 └── Program.cs // Код для запуска бота и очистки вебхука
 ``` 
 ### **Работа бота со стороны пользователя**
-Команда ```/start``` открывает **StartMenu** (Изначально планировались не только уведомления)
+Команда ```/start``` открывает **StartMenu** (Изначально планировались не только уведомления)\n
 <img width="757" height="188" alt="image" src="https://github.com/user-attachments/assets/938398cd-a742-4201-a295-ba75e5e63df6" />
-При нажатие на кнопку открывается **StatusMenu**
+При нажатие на кнопку открывается **StatusMenu**\n
 <img width="740" height="220" alt="image" src="https://github.com/user-attachments/assets/cc694835-b13f-48bf-8b84-f6a333aa93bf" />
-В этом меню пользователь включает и выключает уведомления, а также может настроить
-При нажатие на кнопку ```⚙️ Настройка``` Открывается меню для настройки уведомлений, где на взгляд разработчика всё интуитивно понятно
+В этом меню пользователь включает и выключает уведомления, а также может настроить\n
+При нажатие на кнопку ```⚙️ Настройка``` Открывается меню для настройки уведомлений, где на взгляд разработчика всё интуитивно понятно\n
 <img width="433" height="263" alt="image" src="https://github.com/user-attachments/assets/533c0e2b-519b-41bc-961b-0610ee444ea4" />
 
 ### **Как работают уведомления**
@@ -64,7 +64,9 @@ warframetbot
 
 ### **База данных**
 Программа использует две базы данных
->Notification
+
+Notification
+
 >>Таблица Users:  
 >>>UserId INTEGER PRIMARY KEY,
 >>>IsSubscribed INTEGER NOT NULL DEFAULT 0,
@@ -76,20 +78,25 @@ warframetbot
 >>>ArchonHuntEnabled INTEGER DEFAULT 0,
 >>>SortieEnabled INTEGER DEFAULT 0,
 >>>FissureEnabled INTEGER DEFAULT 0
->DataBaseFissure
+
+DataBaseFissure
+
 >>Таблица Fissures
->>>Id INTEGER PRIMARY KEY AUTOINCREMENT,
->>>Node TEXT NOT NULL,
->>>MissionType TEXT NOT NULL,
->>>Tier TEXT NOT NULL,
->>>Enemy TEXT NOT NULL,
->>>Eta TEXT NOT NULL,
->>>IsHard INTEGER NOT NULL,
->>>TierNum INTEGER NOT NULL,
->>>Timestamp TEXT NOT NULL
+\n
+>>>Id INTEGER PRIMARY KEY AUTOINCREMENT,\n
+>>>Node TEXT NOT NULL,\n
+>>>MissionType TEXT NOT NULL,\n
+>>>Tier TEXT NOT NULL,\n
+>>>Enemy TEXT NOT NULL,\n
+>>>Eta TEXT NOT NULL,\n
+>>>IsHard INTEGER NOT NULL,\n
+>>>TierNum INTEGER NOT NULL,\n
+>>>Timestamp TEXT NOT NULL\n
+
 >>Таблица Users
->>> UserId INTEGER PRIMARY KEY,
->>> IsHardEnabled TEXT NOT NULL,
->>> PlanetEnabled TEXT NOT NULL,
->>> TierEnabled TEXT NOT NULL,
->>> MissionEnabled TEXT NOT NULL
+\n
+>>> UserId INTEGER PRIMARY KEY,\n
+>>> IsHardEnabled TEXT NOT NULL,\n
+>>> PlanetEnabled TEXT NOT NULL,\n
+>>> TierEnabled TEXT NOT NULL,\n
+>>> MissionEnabled TEXT NOT NULL\n
