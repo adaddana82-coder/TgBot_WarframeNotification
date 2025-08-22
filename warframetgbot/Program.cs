@@ -10,7 +10,7 @@ namespace warframetgbot
         {
             var services = new ServiceCollection();
             services.AddSingleton<Manager>();
-            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("7277872087:AAF1BxEshuOSSbjeKtg-ZFJP-SomH4eHr3E"));
+            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("YOUR_TOKEN"));
             services.AddSingleton<BotEngine>();
             var serviceProvider = services.BuildServiceProvider();
 
